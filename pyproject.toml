@@ -1,6 +1,6 @@
 [tool.isort]
 profile = "hug"
-src_paths = ["isort", "test"]
+src_paths = ["isort", "tests"]
 
 [tool.yapf]
 based_on_style = "google"
