@@ -77,7 +77,8 @@ class WMSImageProcessor:
             "https://wms.nlsc.gov.tw/wms?&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap"
             f"&BBOX={grid_extent[3][0]},{grid_extent[3][1]},{grid_extent[1][0]},{grid_extent[1][1]}"
             f"&SRS=EPSG:{epsg}&WIDTH={width}&HEIGHT={height}&LAYERS=LUIMAP&STYLES=&FORMAT=image/png"
-            "&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=96&TRANSPARENT=TRUE")
+            "&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=96&TRANSPARENT=TRUE"
+          )
 
         http = urllib3.PoolManager()
         response = http.request("GET", url)
