@@ -14,3 +14,31 @@ ignore_patterns = [
   "temp/**/*.py",
   "temp2/*.py"
 ]
+
+[tool.poetry]
+name = "wms2shp"
+version = "0.1.0"
+description = ""
+authors = ["SyuanBo <godspeed88168@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+geopandas = "^0.14.3"
+rasterio = "^1.3.9"
+urllib3 = "^2.2.1"
+matplotlib = "^3.8.3"
+folium = "^0.16.0"
+requests = "^2.31.0"
+tqdm = "^4.66.2"
+sqlalchemy = "^2.0.29"
+psycopg2-binary = "^2.9.9"
+geoalchemy2 = "^0.14.7"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
